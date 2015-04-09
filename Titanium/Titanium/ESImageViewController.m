@@ -117,6 +117,7 @@ CGFloat const kMaxImageScale = 3.0;
     [_imageView addGestureRecognizer:self.doubleTapGestureRecognizer];
     
     [self.view addSubview:_imageView];
+    [self.view sendSubviewToBack:_imageView];
 }
 
 - (void)dismissSelf {
